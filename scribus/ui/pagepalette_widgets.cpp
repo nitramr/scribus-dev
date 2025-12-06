@@ -823,9 +823,10 @@ void PageGrid::paintEvent(QPaintEvent *event)
 		{
 
 			int id = pageId(r, c, false);
+			int maxCells = m_rtlBinding ? columns() : 0;
 
 			// cell is after last page cell
-			if (id >= pageCount() + columns())
+			if (id >= pageCount() + maxCells)
 				break;
 
 			// cell is a page cell
