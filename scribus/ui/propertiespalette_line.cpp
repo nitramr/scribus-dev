@@ -39,12 +39,12 @@ PropertiesPalette_Line::PropertiesPalette_Line( QWidget* parent) : QWidget(paren
 	setupUi(this);
 	setSizePolicy( QSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum));
 
-	buttonsCaps = new QButtonGroup();
+	buttonsCaps = new ScButtonGroup();
 	buttonsCaps->addButton(buttonCapFlat, 0);
 	buttonsCaps->addButton(buttonCapSquare, 1);
 	buttonsCaps->addButton(buttonCapRound, 2);
 
-	buttonsJoins = new QButtonGroup();
+	buttonsJoins = new ScButtonGroup();
 	buttonsJoins->addButton(buttonJoinMiter, 0);
 	buttonsJoins->addButton(buttonJoinBevel, 1);
 	buttonsJoins->addButton(buttonJoinRound, 2);
