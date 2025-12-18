@@ -724,7 +724,8 @@ void PropertiesPalette_Fill::iconSetChange()
 	evenOdd->setIcon(im.loadIcon("fill-rule-even-odd"));
 	nonZero->setIcon(im.loadIcon("fill-rule-nonzero"));
 
-	buttonFillMask->setDotIcon(im.loadIcon("mask", 8));
+	labelFillMask->setPixmap(im.loadPixmap("mask"));
+	// labelFillColor->setPixmap(im.loadPixmap("color-fill"));
 
 }
 
@@ -750,7 +751,6 @@ void PropertiesPalette_Fill::toggleLabelVisibility(bool v)
 	labelFillMask->setLabelVisibility(v);
 	labelFillRule->setLabelVisibility(v);
 	labelBlendmode->setLabelVisibility(v);
-	buttonFillMask->setHasDot(!v);
 
 }
 
